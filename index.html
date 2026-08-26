@@ -1390,14 +1390,30 @@
       e.preventDefault();
 
       const nameVal  = document.getElementById('cf-name').value.trim();
-      const emailVal = document.getElementById('cf-email').value.trim();
+      const emailInput = document.getElementById('cf-email');
+      const emailVal = emailInput.value.trim();
       const msgVal   = document.getElementById('cf-msg').value.trim();
 
       if (!nameVal || !emailVal || !msgVal) {
+        playChime();
         Swal.fire({
           icon: 'warning',
           title: 'Missing Fields',
           text: 'Please fill in your name, email, and message.',
+          background: '#0d1229',
+          color: '#e2e8f0',
+          confirmButtonColor: '#6366f1',
+          confirmButtonText: 'OK'
+        });
+        return;
+      }
+
+      if (!emailInput.checkValidity()) {
+        playChime();
+        Swal.fire({
+          icon: 'error',
+          title: 'Invalid Email',
+          text: 'Please enter a valid email address.',
           background: '#0d1229',
           color: '#e2e8f0',
           confirmButtonColor: '#6366f1',
