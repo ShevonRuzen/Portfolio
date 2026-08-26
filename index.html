@@ -1428,16 +1428,29 @@
       btn.disabled = true;
       btnText.textContent = 'Sending…';
 
-      /* --- Build FormData for Google Forms --- */
-      const fd = new FormData();
-      fd.append('entry.2005620554', nameVal);
-      fd.append('entry.1045781291', emailVal);
-      fd.append('entry.839337160',  msgVal);
+      /* --- Build URL-encoded data for Google Forms --- */
+      const formData = new URLSearchParams();
+      formData.append('entry.2005620554', nameVal);
+      formData.append('entry.1045781291', emailVal);
+      formData.append('entry.839337160',  msgVal);
 
       /* --- Submit silently via no-cors fetch --- */
       try {
-        await fetch(FORM_ACTION, { method: 'POST', body: fd, mode: 'no-cors' });
-      } catch (_) { /* no-cors always throws — that's fine, data still reaches Google */ }
+        await fetch(FORM_ACTION, { method: 'POST', body: formData, mode: 'no-cors' });
+      } catch (_) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Submission Failed',
+          text: 'Your message could not be sent. Please try again.',
+          background: '#0d1229',
+          color: '#e2e8f0',
+          confirmButtonColor: '#6366f1',
+          confirmButtonText: 'OK'
+        });
+        btn.disabled = false;
+        btnText.textContent = 'Send Message';
+        return;
+      }
 
       /* --- Play chime --- */
       playChime();
