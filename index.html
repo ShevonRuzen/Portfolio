@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shehan Sandaruwan Portfolio</title>
+  <meta name="description" content="Software Engineering Undergraduate at Birmingham City University & Java Institute. Full-Stack Developer, Multi-Cloud Certified & Data Analytics Enthusiast." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%2306b6d4'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='%23090e1f'/><rect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='2.5' opacity='0.85'/><text x='32' y='45' font-family='system-ui, -apple-system, sans-serif' font-weight='900' font-size='36' fill='url(%23g)' text-anchor='middle'>S</text><circle cx='50' cy='14' r='4.5' fill='%2310b981'/></svg>" />
+  <link rel="alternate icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- AMBIENT CORPORATE GRID OVERLAY & CINEMATIC MOVIE LIGHTING -->
+  <div class="ambient-grid-pattern"></div>
+  <div class="cine-orb-1"></div>
+  <div class="cine-orb-2"></div>
+
+  <!-- PINNED STICKY HEADER WRAPPER (TOPBAR + NAVBAR ALWAYS PINNED TOGETHER AT TOP) -->
+  <header class="header-pinned-wrapper">
+    
+    <!-- TOP ANNOUNCEMENT BAR & PROMINENT SOCIAL LINKS -->
+    <div id="topbar">
+      <div class="tb-marquee-wrap">
+        <div class="tb-marquee">
+          <span>⚡ <strong>Shehan Sandaruwan</strong> — Software Engineering Undergrad @ Birmingham City University</span>
+          <span class="tb-sep">///</span>
+          <span>Open for Internships &amp; Software Engineering Roles</span>
+          <span class="tb-sep">///</span>
+          <span>Full-Stack (MERN / Java / PHP) · Data Analytics · Cloud Architecture</span>
+          <span class="tb-sep">///</span>
+          <span>BCU Student ID: 26107103 · ISIC: S094000015343L</span>
+          <span class="tb-sep">///</span>
+          <!-- Duplicate for continuous scroll -->
+          <span>⚡ <strong>Shehan Sandaruwan</strong> — Software Engineering Undergrad @ Birmingham City University</span>
+          <span class="tb-sep">///</span>
+          <span>Open for Internships &amp; Software Engineering Roles</span>
+          <span class="tb-sep">///</span>
+          <span>Full-Stack (MERN / Java / PHP) · Data Analytics · Cloud Architecture</span>
+          <span class="tb-sep">///</span>
+          <span>BCU Student ID: 26107103 · ISIC: S094000015343L</span>
+        </div>
+      </div>
+
+      <div class="tb-socials">
+        <a href="https://github.com/ShevonRuzen" target="_blank" rel="noopener" class="tb-soc" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shehan-sandaruwan-a53802292/" target="_blank" rel="noopener" class="tb-soc" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://wa.me/+94766940120" target="_blank" rel="noopener" class="tb-soc" title="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/ShehanSandaruwan2002" target="_blank" rel="noopener" class="tb-soc" title="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="mailto:ssandaruwan2002@gmail.com" class="tb-soc" title="Email Direct">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#hero" class="logo">
+          <div class="logo-dot"></div>
+          Shehan { DEV }
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#hero"        class="nav-link">Home</a></li>
+          <li><a href="#about"       class="nav-link">About</a></li>
+          <li><a href="#philosophy"  class="nav-link">Philosophy</a></li>
+          <li><a href="#education"   class="nav-link">Education</a></li>
+          <li><a href="#student-ids" class="nav-link">Student IDs</a></li>
+          <li><a href="#projects"    class="nav-link">Projects</a></li>
+          <li><a href="#skills"      class="nav-link">Skills</a></li>
+          <li><a href="#contact"     class="nav-cta">Say Hi</a></li>
+        </ul>
+
+        <button class="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-bar"></div>
+
+  <!-- DARK / LIGHT MODE TOGGLE BUTTON -->
+  <div class="theme-panel">
+    <button class="theme-toggle-btn" id="themeToggle" title="Toggle Dark / Light Mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- FAB SOUND SYNTHESIZER TOGGLE -->
+  <button class="fab-sound" id="soundBtn" title="Toggle Sound Synth UI">
+    <i class="fa-solid fa-volume-xmark"></i>
+  </button>
+
+  <!-- ====================================================================
+       HERO SECTION
+       ==================================================================== -->
+  <section id="hero" class="hero">
+    <div class="cine-flare-line"></div>
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left Text Content -->
+        <div class="hero-content">
+          <div class="hero-chip">
+            <span class="chip-dot"></span>
+            BCU Student ID: 26107103 · Open to Opportunities
+          </div>
+
+          <div class="cyber-welcome-tag">// WELCOME</div>
+
+          <h1 class="hero-title cyber-glitch-title" data-text="I'm Shehan Sandaruwan">
+            I'm Shehan Sandaruwan
+          </h1>
+
+          <div class="hero-role">
+            &gt; <span class="hero-role-typed"></span>
+          </div>
+
+          <p class="hero-desc">
+            A <strong>Software Engineering undergraduate</strong> at Birmingham City University, trained at the Java Institute for Advanced Technology. I specialize in <strong>MERN stack &amp; Java development</strong>, cloud integrations, and explore <strong>data analytics</strong> to turn complex data into strategic business insights.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-grad">
+              <i class="fa-solid fa-code-branch"></i> View Engineering Projects
+            </a>
+            <a href="https://drive.google.com/file/d/1sybjP_Oefy_9NpGWC3jWD1MJB7OWaWp3/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fa-solid fa-file-lines"></i> View My Resume / CV
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/ShevonRuzen" target="_blank" rel="noopener" class="soc-btn" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shehan-sandaruwan-a53802292/" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/+94766940120" target="_blank" rel="noopener" class="soc-btn" title="WhatsApp Direct">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/ShehanSandaruwan2002" target="_blank" rel="noopener" class="soc-btn" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="mailto:ssandaruwan2002@gmail.com" class="soc-btn" title="Email Direct">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- <div class="crafted-tag">
+            <i class="fa-solid fa-laptop-code"></i> Custom Built &amp; Architected from Scratch by Shehan Sandaruwan
+          </div> -->
+        </div>
+
+        <!-- Right Profile Visual with 3D Tilt -->
+        <div class="hero-visual">
+          <div class="pfp-wrap">
+            <div class="pfp-aura"></div>
+            <img src="assets/img/pfp/DSC_0095.JPG" alt="Shehan Sandaruwan" class="pfp-img" />
+            
+            <div class="pfp-card-badge">
+              <span class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+              <div>
+                <span class="badge-val">Birmingham City University</span>
+                <span class="badge-label">Student ID: 26107103</span>
+              </div>
+            </div>
+            
+            <span class="pfp-tag-top">Open to Internships</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-wheel">
+        <div class="scroll-nub"></div>
+      </div>
+      <span>scroll down</span>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       INTERACTIVE TERMINAL CONSOLE WIDGET
+       ==================================================================== -->
+  <section class="terminal-section">
+    <div class="container">
+      <div class="terminal-wrap">
+        <div class="terminal-bar">
+          <div class="t-dots">
+            <span class="t-dot d-r"></span>
+            <span class="t-dot d-y"></span>
+            <span class="t-dot d-g"></span>
+          </div>
+          <span class="t-title">shehan@portfolio — student-console v2.0</span>
+          <div class="t-cmds">
+            <button class="t-cmd" data-cmd="whoami">whoami</button>
+            <button class="t-cmd" data-cmd="projects">projects</button>
+            <button class="t-cmd" data-cmd="skills">skills</button>
+            <button class="t-cmd" data-cmd="certs">certs</button>
+            <button class="t-cmd" data-cmd="contact">contact</button>
+            <button class="t-cmd" data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+        <div class="t-body" id="termBody">
+          <div class="t-line"><span class="t-prompt">shehan@portfolio:~$</span> Initializing interactive student console... Done.</div>
+          <div class="t-line t-out">Type <span style="color:var(--accent-light)">help</span> or click the buttons above to execute terminal commands.</div>
+        </div>
+
+        <div class="t-input-row">
+          <span class="t-prompt">shehan@portfolio:~$</span>
+          <input type="text" id="termInput" class="t-input" placeholder="Type command here (e.g. whoami, projects, skills)..." autocomplete="off" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       ABOUT SECTION
+       ==================================================================== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading shimmer-text">About <span class="grad-text">Me</span></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="card about-card reveal-l">
+          <p>
+            I am a <strong>Software Engineering undergraduate at Birmingham City University</strong> (Student ID: 26107103) with training from the <strong>Java Institute for Advanced Technology</strong> (ISIC: S094000015343L).
+          </p>
+          <p>
+            My project experience includes <strong>MERN and Java-based development</strong>, cloud integrations, and hardware-software interfacing (Arduino). I regularly explore tools like <strong>Cloud Code, Google Antigravity, and OpenAI Codex</strong> to improve my workflow and code quality.
+          </p>
+          <div class="about-highlight">
+            "Alongside development, I have a strong interest in data analytics and business analytics — passionate about transforming data into actionable insights for strategic decision-making."
+          </div>
+          <p>
+            A collaborative team player who values open communication and shared success. A committed, self-directed learner who isn't afraid of challenges, and keen to grow as both a developer and an analytics professional.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">BCU Student ID: 26107103</span>
+            <span class="about-tag">ISIC Card: S094000015343L</span>
+            <span class="about-tag">NIC: 200213703392</span>
+            <span class="about-tag">Agile / Scrum</span>
+            <span class="about-tag">Self-Directed Learner</span>
+            <span class="about-tag">Team Player</span>
+          </div>
+        </div>
+
+        <div class="stats-col">
+          <div class="card stat-card reveal d1">
+            <div class="stat-icon-wrap si-v"><i class="fa-solid fa-code"></i></div>
+            <div>
+              <div class="stat-num" data-target="5">0</div>
+              <div class="stat-lbl">GitHub Projects</div>
+            </div>
+          </div>
+          <div class="card stat-card reveal d2">
+            <div class="stat-icon-wrap si-p"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <div class="stat-num" data-target="8">0</div>
+              <div class="stat-lbl">Certifications &amp; Diplomas</div>
+            </div>
+          </div>
+          <div class="card stat-card reveal d3">
+            <div class="stat-icon-wrap si-s"><i class="fa-solid fa-layer-group"></i></div>
+            <div>
+              <div class="stat-num" data-target="12">0</div>
+              <div class="stat-lbl">Technologies &amp; Tools</div>
+            </div>
+          </div>
+          <div class="card stat-card reveal d4">
+            <div class="stat-icon-wrap si-g"><i class="fa-solid fa-cloud"></i></div>
+            <div>
+              <div class="stat-num" data-target="3">0</div>
+              <div class="stat-lbl">Cloud Platforms Explored</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       PHILOSOPHY, VISION & STRATEGIC MINDSET SECTION
+       ==================================================================== -->
+  <section id="philosophy" class="philosophy-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading shimmer-text">Engineering <span class="grad-text">Philosophy</span></h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+          How I approach software engineering, team collaboration, technical ownership, and long-term career growth.
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="phil-marquee-wrapper reveal">
+        <div class="phil-marquee-track">
+
+          <!-- Card 1: Core Purpose & Mission -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-v"><i class="fa-solid fa-compass"></i></div>
+              <div>
+                <span class="phil-tag">Mission &amp; Purpose</span>
+                <h3 class="phil-title">Data-Driven Software Engineering</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              My core purpose is bridging <strong>full-stack software architecture with data analytics</strong>. I view software not just as syntax, but as a strategic tool to transform raw business data into actionable insight and user value.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Building resilient, scalable web architectures and mobile systems.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Transforming complex database queries into intuitive analytical dashboards.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: 5-Year Vision -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-p"><i class="fa-solid fa-bullseye"></i></div>
+              <div>
+                <span class="phil-tag">Career Vision</span>
+                <h3 class="phil-title">Multi-Cloud Architect &amp; Senior Engineer</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              Over the next 5 years, my goal is to evolve into a <strong>Senior Full-Stack &amp; Multi-Cloud Systems Architect</strong>, leading enterprise software initiatives, driving cloud network reliability, and mentoring emerging developers.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Deepening expertise across Oracle OCI, AWS, and Aviatrix multi-cloud networking.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Leading cross-functional engineering teams with clear technical direction.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Engineering Thinking & Quality -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-s"><i class="fa-solid fa-sliders"></i></div>
+              <div>
+                <span class="phil-tag">Technical Mindset</span>
+                <h3 class="phil-title">Pragmatic Quality &amp; Clean Architecture</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              I practice a <strong>"Clean Core, Pragmatic Iteration"</strong> methodology. Clean, testable code adhering to SOLID &amp; DRY principles prevents technical debt and ultimately accelerates feature velocity.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Delivering lean, working MVP features early without compromising security or data integrity.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Leveraging modern AI-assisted tools (OpenAI Codex, Cloud Code) to streamline refactoring.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Accountability & Ownership -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-g"><i class="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <span class="phil-tag">Ownership</span>
+                <h3 class="phil-title">Solution-First Accountability</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              When unexpected bugs or production issues occur, I take <strong>immediate ownership without deflection</strong> — diagnosing root causes, executing swift patches, and conducting post-mortems to prevent regression.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Fixing underlying causes rather than applying superficial symptom patches.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Volunteering for complex backend bottlenecks to unblock team deliverables.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Team Collaboration & Communication -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-v"><i class="fa-solid fa-users"></i></div>
+              <div>
+                <span class="phil-tag">Team Dynamics</span>
+                <h3 class="phil-title">Empathetic Teammate &amp; Communicator</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              I believe great software is built through <strong>open communication and mutual support</strong>. I translate complex technical constraints into clear business terms for stakeholders and mentor peers through pairing.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Communicating technical trade-offs transparently with non-technical leaders.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Pair-programming with struggling teammates to share knowledge and maintain morale.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Work Ethic & Integrity -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-p"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div>
+                <span class="phil-tag">Values &amp; Ethics</span>
+                <h3 class="phil-title">Integrity &amp; Continuous Growth</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              I am a <strong>self-directed learner who thrives on challenge</strong>. I uphold zero-tolerance standards for cutting security corners or mishandling sensitive user/student data.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Strict compliance with user data protection and secure database practices.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Continuously exploring emerging technologies to stay ahead of industry standards.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= DUPLICATED SET FOR INFINITE SEAMLESS LOOP ================= -->
+
+          <!-- Card 1 Duplicate -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-v"><i class="fa-solid fa-compass"></i></div>
+              <div>
+                <span class="phil-tag">Mission &amp; Purpose</span>
+                <h3 class="phil-title">Data-Driven Software Engineering</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              My core purpose is bridging <strong>full-stack software architecture with data analytics</strong>. I view software not just as syntax, but as a strategic tool to transform raw business data into actionable insight and user value.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Building resilient, scalable web architectures and mobile systems.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Transforming complex database queries into intuitive analytical dashboards.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 Duplicate -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-p"><i class="fa-solid fa-bullseye"></i></div>
+              <div>
+                <span class="phil-tag">Career Vision</span>
+                <h3 class="phil-title">Multi-Cloud Architect &amp; Senior Engineer</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              Over the next 5 years, my goal is to evolve into a <strong>Senior Full-Stack &amp; Multi-Cloud Systems Architect</strong>, leading enterprise software initiatives, driving cloud network reliability, and mentoring emerging developers.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Deepening expertise across Oracle OCI, AWS, and Aviatrix multi-cloud networking.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Leading cross-functional engineering teams with clear technical direction.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 Duplicate -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-s"><i class="fa-solid fa-sliders"></i></div>
+              <div>
+                <span class="phil-tag">Technical Mindset</span>
+                <h3 class="phil-title">Pragmatic Quality &amp; Clean Architecture</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              I practice a <strong>"Clean Core, Pragmatic Iteration"</strong> methodology. Clean, testable code adhering to SOLID &amp; DRY principles prevents technical debt and ultimately accelerates feature velocity.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Delivering lean, working MVP features early without compromising security or data integrity.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Leveraging modern AI-assisted tools (OpenAI Codex, Cloud Code) to streamline refactoring.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 Duplicate -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-g"><i class="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <span class="phil-tag">Ownership</span>
+                <h3 class="phil-title">Solution-First Accountability</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              When unexpected bugs or production issues occur, I take <strong>immediate ownership without deflection</strong> — diagnosing root causes, executing swift patches, and conducting post-mortems to prevent regression.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Fixing underlying causes rather than applying superficial symptom patches.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Volunteering for complex backend bottlenecks to unblock team deliverables.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 Duplicate -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-v"><i class="fa-solid fa-users"></i></div>
+              <div>
+                <span class="phil-tag">Team Dynamics</span>
+                <h3 class="phil-title">Empathetic Teammate &amp; Communicator</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              I believe great software is built through <strong>open communication and mutual support</strong>. I translate complex technical constraints into clear business terms for stakeholders and mentor peers through pairing.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Communicating technical trade-offs transparently with non-technical leaders.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Pair-programming with struggling teammates to share knowledge and maintain morale.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 Duplicate -->
+          <div class="card phil-card">
+            <div class="phil-header">
+              <div class="phil-icon si-p"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div>
+                <span class="phil-tag">Values &amp; Ethics</span>
+                <h3 class="phil-title">Integrity &amp; Continuous Growth</h3>
+              </div>
+            </div>
+            <p class="phil-text">
+              I am a <strong>self-directed learner who thrives on challenge</strong>. I uphold zero-tolerance standards for cutting security corners or mishandling sensitive user/student data.
+            </p>
+            <div class="phil-bullets">
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Strict compliance with user data protection and secure database practices.</span>
+              </div>
+              <div class="phil-bullet-item">
+                <i class="fa-solid fa-check phil-bullet-icon"></i>
+                <span>Continuously exploring emerging technologies to stay ahead of industry standards.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       EDUCATION & CERTIFICATIONS HORIZONTAL ROADMAP FLOW
+       ==================================================================== -->
+  <section id="education" class="edu-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading shimmer-text">Education &amp; <span class="grad-text">Certifications</span></h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Interactive Career &amp; Academic Learning Journey Roadmap (April 2024 — August 2026)
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <!-- VERTICAL CENTRAL ALTERNATING TIMELINE ROADMAP FLOW -->
+      <div class="v-roadmap-container reveal">
+        <div class="v-roadmap-line"></div>
+
+        <!-- Station 01 (Right) -->
+        <div class="v-road-item right">
+          <div class="v-node-dot"></div>
+          <div class="v-road-card card">
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Aug 2026</div>
+            <span class="tl-station">🎓 Station 01</span>
+            <div class="tl-title">Level 5 Professional Higher Diploma in Software Engineering</div>
+            <div class="tl-issuer">Skills and Education Group Awards UK</div>
+            <div class="tl-meta-row">
+              <span class="tl-id-badge">ID: AMS0000646784</span>
+            </div>
+            <div class="tl-imgs">
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1787317657984.jpg" alt="Level 5 HDSE Certificate" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> Certificate</div>
+              </div>
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1787317572340.jpg" alt="Level 5 HDSE Academic Transcript" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> Transcript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Station 02 (Left) -->
+        <div class="v-road-item left">
+          <div class="v-node-dot"></div>
+          <div class="v-road-card card">
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Jun 2026</div>
+            <span class="tl-station">📜 Station 02</span>
+            <div class="tl-title">Business Analyst Professional Diploma</div>
+            <div class="tl-issuer">Academy Europe — European Open University</div>
+            <div class="tl-meta-row">
+              <span class="tl-id-badge">ID: AE-BA-2026</span>
+            </div>
+            <div class="tl-imgs">
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1758393746660.jpg" alt="Business Analyst Diploma" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Station 03 (Right) -->
+        <div class="v-road-item right">
+          <div class="v-node-dot"></div>
+          <div class="v-road-card card">
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Apr 2026</div>
+            <span class="tl-station">⚡ Station 03</span>
+            <div class="tl-title">Introduction to MERN Stack</div>
+            <div class="tl-issuer">Simplilearn</div>
+            <div class="tl-meta-row">
+              <span class="tl-id-badge">ID: SL-MERN-2026</span>
+            </div>
+            <div class="tl-imgs">
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1775586948831.jpg" alt="MERN Stack Certificate" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Station 04 (Left) -->
+        <div class="v-road-item left">
+          <div class="v-node-dot"></div>
+          <div class="v-road-card card">
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Sep 2025</div>
+            <span class="tl-station">☁️ Station 04</span>
+            <div class="tl-title">ACE Multicloud Network Associate</div>
+            <div class="tl-issuer">Aviatrix</div>
+            <div class="tl-meta-row">
+              <span class="tl-id-badge">ID: 5d3dc005...</span>
+            </div>
+            <div class="tl-imgs">
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1758363297660.jpg" alt="Aviatrix ACE Certificate" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Station 05 (Right) -->
+        <div class="v-road-item right">
+          <div class="v-node-dot"></div>
+          <div class="v-road-card card">
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Jul 2025</div>
+            <span class="tl-station">🏛️ Station 05</span>
+            <div class="tl-title">Oracle Cloud Infrastructure — Foundations &amp; AI</div>
+            <div class="tl-issuer">Oracle</div>
+            <div class="tl-meta-row">
+              <span class="tl-id-badge">ID: OC6436512</span>
+            </div>
+            <div class="tl-imgs">
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1758363544727.jpg" alt="OCI Foundations Certificate" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> Foundations</div>
+              </div>
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1758363800705.jpg" alt="OCI AI Foundations Certificate" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> AI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Station 06 (Left) -->
+        <div class="v-road-item left">
+          <div class="v-node-dot"></div>
+          <div class="v-road-card card">
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Jul 2025</div>
+            <span class="tl-station">🍃 Station 06</span>
+            <div class="tl-title">MongoDB for SQL Experts</div>
+            <div class="tl-issuer">MongoDB</div>
+            <div class="tl-meta-row">
+              <span class="tl-id-badge">ID: MDBkg1t4zab20</span>
+            </div>
+            <div class="tl-imgs">
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1758364407613.jpg" alt="MongoDB Certificate" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Station 07 (Right) -->
+        <div class="v-road-item right">
+          <div class="v-node-dot"></div>
+          <div class="v-road-card card">
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Apr 2024</div>
+            <span class="tl-station">🌍 Station 07</span>
+            <div class="tl-title">International Business Management Diploma</div>
+            <div class="tl-issuer">Academy Europe — European Open University</div>
+            <div class="tl-meta-row">
+              <span class="tl-id-badge">ID: AE-IBM-2024</span>
+            </div>
+            <div class="tl-imgs">
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/1758363214882.jpg" alt="International Business Management Diploma" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       DEDICATED SEPARATE SECTION: ACADEMIC IDENTITY CARDS
+       ==================================================================== -->
+  <section id="student-ids">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading shimmer-text">Academic Identity &amp; <span class="grad-text">Student Cards</span></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="sid-grid">
+
+        <!-- Card 1: BCU Student Card -->
+        <div class="card sid-card reveal d1">
+          <div class="sid-img-wrap">
+            <img src="assets/img/pfp/bcup.jpg" alt="Birmingham City University Student Card" />
+            <div class="sid-overlay"><i class="fa-solid fa-expand"></i> View Student Card</div>
+          </div>
+          <div class="sid-body">
+            <div class="sid-org">Birmingham City University</div>
+            <div class="sid-title">Birmingham City University Student Affiliation</div>
+            <div class="sid-tags">
+              <span class="sid-tag">BCU Student</span>
+              <span class="sid-tag">ID: 26107103</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Academic Letter WITH DIRECT DOWNLOAD LINK -->
+        <div class="card sid-card reveal d2">
+          <div class="sid-img-wrap">
+            <img src="assets/img/pfp/acltr.jpeg" alt="Academic Completion & Recommendation Letter" />
+            <div class="sid-overlay"><i class="fa-solid fa-expand"></i> View Letter Preview</div>
+          </div>
+          <div class="sid-body">
+            <div class="sid-org">Academic Institution</div>
+            <div class="sid-title">Official Academic Completion &amp; Recommendation Letter</div>
+            <div class="sid-tags">
+              <span class="sid-tag">Verified Document</span>
+              <span class="sid-tag">Academic Letter</span>
+            </div>
+            <a href="https://drive.google.com/file/d/14YW0v8UzihLmMEMQtKOx_ubLp27RBbj0/view?usp=sharing" target="_blank" rel="noopener" class="sid-download">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Official Letter
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: ISIC International Student Card -->
+        <div class="card sid-card reveal d3">
+          <div class="sid-img-wrap">
+            <img src="assets/img/pfp/isic.jpg" alt="International Student Identity Card ISIC" />
+            <div class="sid-overlay"><i class="fa-solid fa-expand"></i> View ISIC Card</div>
+          </div>
+          <div class="sid-body">
+            <div class="sid-org">ISIC Association</div>
+            <div class="sid-title">ISIC Global International Student Identity Card</div>
+            <div class="sid-tags">
+              <span class="sid-tag">Global Student ID</span>
+              <span class="sid-tag">ISIC: S094000015343L</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       PROJECTS SECTION
+       ==================================================================== -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading shimmer-text">Featured <span class="grad-text">Projects</span></h2>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="proj-filters reveal">
+        <button class="filter-chip active" data-filter="all">All Projects</button>
+        <button class="filter-chip" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-chip" data-filter="web">Web Development</button>
+        <button class="filter-chip" data-filter="ai">AI / Bot Systems</button>
+        <button class="filter-chip" data-filter="enterprise">Enterprise POS</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: AutoMart -->
+        <div class="proj-wrap" data-cat="mobile">
+          <div class="card proj-card reveal d1">
+            <div class="proj-img-wrap tl-img-wrap">
+              <img src="assets/pjt/a1.jpg" alt="AutoMart Project Preview" />
+              <div class="proj-img-over"><i class="fa-solid fa-expand"></i> View Preview</div>
+            </div>
+            <div class="proj-top">
+              <div class="proj-icon si-v"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <a href="https://github.com/ShevonRuzen/AutoMart" target="_blank" rel="noopener" class="proj-gh" title="View GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="proj-type">Mobile Commerce · Academic</div>
+            <div class="proj-name">AutoMart</div>
+            <p class="proj-desc">Android mobile application built with Java and native Android SDK for vehicle sales, auto parts browsing, and mobile transaction workflows.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Java</span>
+              <span class="proj-tag">Android Studio</span>
+              <span class="proj-tag">REST APIs</span>
+              <span class="proj-tag">M-Commerce</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1kLUoDIE3czPqjgm4Dd9nGUiHGXH-_ZZF/view?usp=sharing" target="_blank" rel="noopener" class="proj-doc-btn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Documentation
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: ChatSpot (NEW) -->
+        <div class="proj-wrap" data-cat="web ai">
+          <div class="card proj-card reveal d2">
+            <div class="proj-img-wrap tl-img-wrap">
+              <img src="assets/pjt/c1.jpg" alt="ChatSpot Real-Time Messaging Platform Preview" />
+              <div class="proj-img-over"><i class="fa-solid fa-expand"></i> View Preview</div>
+            </div>
+            <div class="proj-top">
+              <div class="proj-icon si-p"><i class="fa-solid fa-comments"></i></div>
+              <a href="https://github.com/ShevonRuzen/ChatSpot" target="_blank" rel="noopener" class="proj-gh" title="View GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="proj-type">Real-Time Messaging · Full-Stack</div>
+            <div class="proj-name">ChatSpot</div>
+            <p class="proj-desc">Real-time messaging &amp; chat application featuring WebSocket connections, user authentication, instant messaging streams, and responsive web UI.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">Socket.io</span>
+              <span class="proj-tag">Express.js</span>
+              <span class="proj-tag">JavaScript</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1vBY5BPtgT43RGIla9HoXQJSxUdysMQss/view?usp=sharing" target="_blank" rel="noopener" class="proj-doc-btn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Documentation
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Noara Institute POS -->
+        <div class="proj-wrap" data-cat="enterprise">
+          <div class="card proj-card reveal d3">
+            <div class="proj-img-wrap tl-img-wrap">
+              <img src="assets/pjt/n1.jpg" alt="Noara Institute POS Preview" />
+              <div class="proj-img-over"><i class="fa-solid fa-expand"></i> View Preview</div>
+            </div>
+            <div class="proj-top">
+              <div class="proj-icon si-g"><i class="fa-solid fa-laptop-code"></i></div>
+              <a href="https://github.com/ShevonRuzen/Noara-Institute-Management-System" target="_blank" rel="noopener" class="proj-gh" title="View GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="proj-type">Enterprise POS · Team Project</div>
+            <div class="proj-name">Noara Institute POS</div>
+            <p class="proj-desc">Java Enterprise POS system and Admin Dashboard developed by our ALLIONZ team for academic institute inventory management, student billing, and reporting.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Java</span>
+              <span class="proj-tag">Java Swing</span>
+              <span class="proj-tag">MySQL</span>
+              <span class="proj-tag">OOP Architecture</span>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1WW843XtOSgE-iMMKbHzO2N13f5kdugZN?usp=sharing" target="_blank" rel="noopener" class="proj-doc-btn">
+              <i class="fa-solid fa-folder-open"></i> View Project Documents Folder
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Chellot -->
+        <div class="proj-wrap" data-cat="ai web">
+          <div class="card proj-card reveal d4">
+            <div class="proj-img-wrap tl-img-wrap" style="background: linear-gradient(135deg, rgba(236,72,153,0.18), rgba(99,102,241,0.25)); display:flex; align-items:center; justify-content:center;">
+              <i class="fa-solid fa-robot" style="font-size: 3.2rem; color: var(--accent3);"></i>
+            </div>
+            <div class="proj-top">
+              <div class="proj-icon si-s"><i class="fa-solid fa-robot"></i></div>
+              <a href="https://github.com/ShevonRuzen/Chellot" target="_blank" rel="noopener" class="proj-gh" title="View GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="proj-type">AI Chatbot · Web System</div>
+            <div class="proj-name">Chellot</div>
+            <p class="proj-desc">Web-based AI Chat Bot system enabling intelligent natural language interaction, dynamic conversational responses, and responsive web UI.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">JavaScript</span>
+              <span class="proj-tag">AI API Integration</span>
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">HTML5 / CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Yapio -->
+        <div class="proj-wrap" data-cat="web">
+          <div class="card proj-card reveal d1">
+            <div class="proj-img-wrap tl-img-wrap" style="background: linear-gradient(135deg, rgba(6,182,212,0.18), rgba(99,102,241,0.25)); display:flex; align-items:center; justify-content:center;">
+              <i class="fa-solid fa-layer-group" style="font-size: 3.2rem; color: var(--accent2);"></i>
+            </div>
+            <div class="proj-top">
+              <div class="proj-icon si-v"><i class="fa-solid fa-layer-group"></i></div>
+              <a href="https://github.com/ShevonRuzen/Yapio" target="_blank" rel="noopener" class="proj-gh" title="View GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="proj-type">Full-Stack · MERN Web</div>
+            <div class="proj-name">Yapio</div>
+            <p class="proj-desc">Full-stack web application platform offering RESTful API routing, asynchronous data rendering, and backend microservice orchestration.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">MongoDB</span>
+              <span class="proj-tag">Express.js</span>
+              <span class="proj-tag">React.js</span>
+              <span class="proj-tag">Node.js</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 6: FeniZ -->
+        <div class="proj-wrap" data-cat="web">
+          <div class="card proj-card reveal d2">
+            <div class="proj-img-wrap tl-img-wrap">
+              <img src="assets/pjt/f1.jpg" alt="FeniZ E-Commerce Platform Preview" />
+              <div class="proj-img-over"><i class="fa-solid fa-expand"></i> View Preview</div>
+            </div>
+            <div class="proj-top">
+              <div class="proj-icon si-p"><i class="fa-solid fa-store"></i></div>
+              <a href="https://github.com/ShevonRuzen/feniz" target="_blank" rel="noopener" class="proj-gh" title="View GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="proj-type">E-Commerce · Web Platform</div>
+            <div class="proj-name">FeniZ E-Commerce</div>
+            <p class="proj-desc">Full-featured online Clothing E-Commerce web platform featuring product catalog, cart session management, checkout flow, and MySQL database integration.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">PHP</span>
+              <span class="proj-tag">MySQL</span>
+              <span class="proj-tag">E-Commerce</span>
+              <span class="proj-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       SKILLS SECTION
+       ==================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading shimmer-text">Skills &amp; <span class="grad-text">Technologies</span></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="skills-wrapper">
+
+        <!-- Category 1: Web & Mobile -->
+        <div class="card skill-cat reveal d1">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon si-v"><i class="fa-solid fa-code"></i></div>
+            <span class="skill-cat-title">Web &amp; Mobile Development</span>
+          </div>
+          <div class="skill-list">
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-brands fa-react" style="color:#61dafb"></i> React.js / React Native</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-a" data-pct="82"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-brands fa-node-js" style="color:#68a063"></i> Node.js &amp; Express.js</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-a" data-pct="80"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-brands fa-java" style="color:#f89820"></i> Java (Android / Swing)</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-a" data-pct="85"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-brands fa-php" style="color:#777bb4"></i> PHP</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-a" data-pct="78"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-brands fa-js" style="color:#f0db4f"></i> JavaScript / TypeScript</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-a" data-pct="88"></div></div>
+            </div>
+          </div>
+          <div class="tech-badges">
+            <span class="tech-b">Figma</span>
+            <span class="tech-b">HTML5/CSS3</span>
+            <span class="tech-b">Bootstrap</span>
+            <span class="tech-b">REST APIs</span>
+            <span class="tech-b">GraphQL</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Cloud, DBs & Testing -->
+        <div class="card skill-cat reveal d2">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon si-s"><i class="fa-solid fa-cloud"></i></div>
+            <span class="skill-cat-title">Cloud, Databases &amp; Testing</span>
+          </div>
+          <div class="skill-list">
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-solid fa-leaf" style="color:#13aa52"></i> MongoDB</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-b" data-pct="82"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-solid fa-fire" style="color:#ffca28"></i> Firebase</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-b" data-pct="75"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-solid fa-database" style="color:#4479a1"></i> MySQL</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-b" data-pct="88"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-brands fa-github" style="color:#ffffff"></i> GitHub Actions (CI/CD)</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-b" data-pct="70"></div></div>
+            </div>
+          </div>
+          <div class="tech-badges">
+            <span class="tech-b">Oracle OCI</span>
+            <span class="tech-b">AWS (Foundations)</span>
+            <span class="tech-b">Git / GitHub</span>
+            <span class="tech-b">Postman</span>
+            <span class="tech-b">Testing Tools</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Data Analysis & Systems -->
+        <div class="card skill-cat reveal d3">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon si-p"><i class="fa-solid fa-chart-line"></i></div>
+            <span class="skill-cat-title">Data Analysis &amp; Core Systems</span>
+          </div>
+          <div class="skill-list">
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-brands fa-python" style="color:#3776ab"></i> Python (Data Analysis)</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-c" data-pct="75"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-solid fa-table" style="color:#217346"></i> Excel &amp; Power BI</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-c" data-pct="78"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row-top">
+                <span class="skill-name-txt"><i class="fa-solid fa-microchip" style="color:#00979d"></i> Arduino / C++ (Hardware Interface)</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill fill-c" data-pct="65"></div></div>
+            </div>
+          </div>
+          <div class="tech-badges">
+            <span class="tech-b">Business Analysis</span>
+            <span class="tech-b">Project Management</span>
+            <span class="tech-b">AI Foundations</span>
+            <span class="tech-b">Cloud Code</span>
+            <span class="tech-b">OpenAI Codex</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       YOUTUBE TUTORIAL
+       ==================================================================== -->
+  <section id="youtube" class="edu-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading shimmer-text">YouTube <span class="grad-text">Tutorial</span></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="card yt-card reveal">
+        <div class="yt-pill"><i class="fa-brands fa-youtube"></i> YouTube Video Tutorial</div>
+        <div class="yt-title">MySQL Basic Complete Tutorial</div>
+        <p class="yt-sub">Comprehensive tutorial covering relational databases, query structure, joins, and database design fundamentals. Sharing practical technical knowledge with the developer community!</p>
+
+        <div class="yt-thumb-wrap" id="ytPlayerBox">
+          <img src="https://img.youtube.com/vi/vKJazMI5PAY/maxresdefault.jpg" alt="MySQL Basic Complete Tutorial — Shehan Sandaruwan" />
+          <div class="yt-play-btn"><i class="fa-solid fa-play"></i></div>
+        </div>
+
+        <div style="margin-top: 1.2rem; text-align: center;">
+          <a href="https://youtu.be/vKJazMI5PAY?si=_xxJos-a4b9ZwfCS" target="_blank" rel="noopener" class="proj-doc-btn" style="background: rgba(239, 68, 68, 0.2); border-color: rgba(239, 68, 68, 0.4); color: #ef4444;">
+            <i class="fa-brands fa-youtube"></i> Watch MySQL Tutorial Directly on YouTube
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CONTACT SECTION
+       ==================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading shimmer-text">Contact <span class="grad-text">Me</span></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="card contact-info-card reveal-l">
+          <h3>Let's connect &amp; collaborate</h3>
+          <p>Open for software engineering opportunities, internships, data analytics projects, or technical inquiries!</p>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div>
+              <div class="c-label">Email Direct</div>
+              <div class="c-val"><a href="mailto:ssandaruwan2002@gmail.com">ssandaruwan2002@gmail.com</a></div>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="c-label">Phone</div>
+              <div class="c-val"><a href="tel:+94766940120">+94 76 694 0120</a></div>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <div class="c-label">WhatsApp</div>
+              <div class="c-val"><a href="https://wa.me/+94766940120" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <div class="c-label">LinkedIn</div>
+              <div class="c-val"><a href="https://www.linkedin.com/in/shehan-sandaruwan-a53802292/" target="_blank" rel="noopener">Shehan Sandaruwan</a></div>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <div class="c-label">GitHub Profile</div>
+              <div class="c-val"><a href="https://github.com/ShevonRuzen" target="_blank" rel="noopener">github.com/ShevonRuzen</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card contact-form-card reveal-r">
+          <form onsubmit="event.preventDefault(); this.innerHTML='<div style=\'text-align:center;padding:3rem;\'><i class=\'fa-solid fa-circle-check\' style=\'font-size:2.8rem;color:#10b981;margin-bottom:1rem;\'></i><h3 style=\'color:var(--text-bright)\'>Message Sent!</h3><p style=\'color:var(--text-muted)\'>Thank you for reaching out. Shehan will get back to you shortly 🙌</p></div>';">
+            <div class="f-group">
+              <label class="f-label">// YOUR_NAME</label>
+              <input type="text" class="f-input" placeholder="e.g. John Doe" required />
+            </div>
+            <div class="f-group">
+              <label class="f-label">// YOUR_EMAIL</label>
+              <input type="email" class="f-input" placeholder="john@example.com" required />
+            </div>
+            <div class="f-group">
+              <label class="f-label">// MESSAGE_BODY</label>
+              <textarea class="f-textarea" placeholder="Write your message or project inquiry here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-grad" style="width:100%;justify-content:center;">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026  @ <span>Shehan Sandaruwan</span> |  All Rights Reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <!-- ============================================================
+       Portfolio Protection Layer — Shehan Sandaruwan
+       Deters casual right-click and keyboard copying while allowing
+       seamless site navigation.
+  ============================================================ -->
+  <script>
+  (function(){
+    'use strict';
+
+    /* 1 · Disable right-click context menu */
+    document.addEventListener('contextmenu',function(e){e.preventDefault();return false;});
+
+    /* 2 · Block keyboard view-source / save shortcuts */
+    document.addEventListener('keydown',function(e){
+      if(e.key==='F12'){e.preventDefault();return false;}
+      if(e.ctrlKey&&e.shiftKey&&['I','J','C','i','j','c'].includes(e.key)){e.preventDefault();return false;}
+      if(e.ctrlKey&&(e.key==='U'||e.key==='u')){e.preventDefault();return false;}
+      if(e.ctrlKey&&(e.key==='S'||e.key==='s')){e.preventDefault();return false;}
+    });
+
+    /* 3 · Disable image drag */
+    document.addEventListener('dragstart',function(e){
+      if(e.target.tagName==='IMG')e.preventDefault();
+    });
+  })();
+  </script>
+</body>
+</html>
