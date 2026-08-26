@@ -653,8 +653,32 @@
         <div class="v-road-item left">
           <div class="v-node-dot"></div>
           <div class="v-road-card card">
-            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Jun 2026</div>
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Aug 2026</div>
             <span class="tl-station">📜 Station 02</span>
+            <div class="tl-title">Level 4 Professional Diploma in Software Engineering</div>
+            <div class="tl-issuer">Skills and Education Group Awards UK</div>
+            <div class="tl-meta-row">
+              <span class="tl-id-badge">ID: AMS0000646784</span>
+            </div>
+            <div class="tl-imgs">
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/n4c.jpg" alt="Level 4 PDSE Certificate" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> Certificate</div>
+              </div>
+              <div class="tl-img-wrap">
+                <img src="assets/img/certificates/n4t.jpg" alt="Level 4 PDSE Academic Transcript" />
+                <div class="tl-img-over"><i class="fa-solid fa-expand"></i> Transcript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Station 03 (Right) -->
+        <div class="v-road-item right">
+          <div class="v-node-dot"></div>
+          <div class="v-road-card card">
+            <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Jun 2026</div>
+            <span class="tl-station">📜 Station 03</span>
             <div class="tl-title">Business Analyst Professional Diploma</div>
             <div class="tl-issuer">Academy Europe — European Open University</div>
             <div class="tl-meta-row">
@@ -669,12 +693,12 @@
           </div>
         </div>
 
-        <!-- Station 03 (Right) -->
-        <div class="v-road-item right">
+        <!-- Station 04 (Left) -->
+        <div class="v-road-item left">
           <div class="v-node-dot"></div>
           <div class="v-road-card card">
             <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Apr 2026</div>
-            <span class="tl-station">⚡ Station 03</span>
+            <span class="tl-station">⚡ Station 04</span>
             <div class="tl-title">Introduction to MERN Stack</div>
             <div class="tl-issuer">Simplilearn</div>
             <div class="tl-meta-row">
@@ -689,12 +713,12 @@
           </div>
         </div>
 
-        <!-- Station 04 (Left) -->
-        <div class="v-road-item left">
+        <!-- Station 05 (Right) -->
+        <div class="v-road-item right">
           <div class="v-node-dot"></div>
           <div class="v-road-card card">
             <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Sep 2025</div>
-            <span class="tl-station">☁️ Station 04</span>
+            <span class="tl-station">☁️ Station 05</span>
             <div class="tl-title">ACE Multicloud Network Associate</div>
             <div class="tl-issuer">Aviatrix</div>
             <div class="tl-meta-row">
@@ -709,12 +733,12 @@
           </div>
         </div>
 
-        <!-- Station 05 (Right) -->
-        <div class="v-road-item right">
+        <!-- Station 06 (Left) -->
+        <div class="v-road-item left">
           <div class="v-node-dot"></div>
           <div class="v-road-card card">
             <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Jul 2025</div>
-            <span class="tl-station">🏛️ Station 05</span>
+            <span class="tl-station">🏛️ Station 06</span>
             <div class="tl-title">Oracle Cloud Infrastructure — Foundations &amp; AI</div>
             <div class="tl-issuer">Oracle</div>
             <div class="tl-meta-row">
@@ -733,12 +757,12 @@
           </div>
         </div>
 
-        <!-- Station 06 (Left) -->
-        <div class="v-road-item left">
+        <!-- Station 07 (Right) -->
+        <div class="v-road-item right">
           <div class="v-node-dot"></div>
           <div class="v-road-card card">
             <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Jul 2025</div>
-            <span class="tl-station">🍃 Station 06</span>
+            <span class="tl-station">🍃 Station 07</span>
             <div class="tl-title">MongoDB for SQL Experts</div>
             <div class="tl-issuer">MongoDB</div>
             <div class="tl-meta-row">
@@ -753,12 +777,12 @@
           </div>
         </div>
 
-        <!-- Station 07 (Right) -->
-        <div class="v-road-item right">
+        <!-- Station 08 (Left) -->
+        <div class="v-road-item left">
           <div class="v-node-dot"></div>
           <div class="v-road-card card">
             <div class="road-date-pill"><i class="fa-regular fa-calendar-days"></i> Apr 2024</div>
-            <span class="tl-station">🌍 Station 07</span>
+            <span class="tl-station">🌍 Station 08</span>
             <div class="tl-title">International Business Management Diploma</div>
             <div class="tl-issuer">Academy Europe — European Open University</div>
             <div class="tl-meta-row">
@@ -1267,21 +1291,21 @@
         </div>
 
         <div class="card contact-form-card reveal-r">
-          <form onsubmit="event.preventDefault(); this.innerHTML='<div style=\'text-align:center;padding:3rem;\'><i class=\'fa-solid fa-circle-check\' style=\'font-size:2.8rem;color:#10b981;margin-bottom:1rem;\'></i><h3 style=\'color:var(--text-bright)\'>Message Sent!</h3><p style=\'color:var(--text-muted)\'>Thank you for reaching out. Shehan will get back to you shortly 🙌</p></div>';">
+          <form id="contactForm" novalidate>
             <div class="f-group">
               <label class="f-label">// YOUR_NAME</label>
-              <input type="text" class="f-input" placeholder="e.g. John Doe" required />
+              <input type="text" id="cf-name" class="f-input" placeholder="e.g. John Doe" required autocomplete="name" />
             </div>
             <div class="f-group">
               <label class="f-label">// YOUR_EMAIL</label>
-              <input type="email" class="f-input" placeholder="john@example.com" required />
+              <input type="email" id="cf-email" class="f-input" placeholder="john@example.com" required autocomplete="email" />
             </div>
             <div class="f-group">
               <label class="f-label">// MESSAGE_BODY</label>
-              <textarea class="f-textarea" placeholder="Write your message or project inquiry here..." required></textarea>
+              <textarea id="cf-msg" class="f-textarea" placeholder="Write your message or project inquiry here..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-grad" style="width:100%;justify-content:center;">
-              <i class="fa-regular fa-paper-plane"></i> Send Message
+            <button type="submit" id="cf-btn" class="btn btn-grad" style="width:100%;justify-content:center;">
+              <i class="fa-regular fa-paper-plane"></i> <span id="cf-btn-text">Send Message</span>
             </button>
           </form>
         </div>
@@ -1323,5 +1347,114 @@
     });
   })();
   </script>
+  <!-- SweetAlert2 for success notification popup -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- ============================================================
+       Contact Form → Silent Google Forms Submission
+       Entry IDs extracted from Google Form source:
+         Name     → entry.2005620554
+         Email    → entry.1045781291
+         Comments → entry.839337160
+  ============================================================ -->
+  <script>
+  (function () {
+    const FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSd5S2eGWO0xMKSOZ53N88OcxO_Yky76HNb1UpRxjA4sSBmq8A/formResponse';
+
+    /* --- Chime sound (short Web Audio API beep) --- */
+    function playChime() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const freqs = [523, 659, 784, 1046]; // C5 E5 G5 C6 — major chord sweep
+        freqs.forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.type = 'sine';
+          osc.frequency.value = freq;
+          const t = ctx.currentTime + i * 0.13;
+          gain.gain.setValueAtTime(0, t);
+          gain.gain.linearRampToValueAtTime(0.28, t + 0.04);
+          gain.gain.linearRampToValueAtTime(0, t + 0.38);
+          osc.start(t);
+          osc.stop(t + 0.4);
+        });
+      } catch(e) { /* silent fallback if blocked */ }
+    }
+
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const nameVal  = document.getElementById('cf-name').value.trim();
+      const emailVal = document.getElementById('cf-email').value.trim();
+      const msgVal   = document.getElementById('cf-msg').value.trim();
+
+      if (!nameVal || !emailVal || !msgVal) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Missing Fields',
+          text: 'Please fill in your name, email, and message.',
+          background: '#0d1229',
+          color: '#e2e8f0',
+          confirmButtonColor: '#6366f1',
+          confirmButtonText: 'OK'
+        });
+        return;
+      }
+
+      /* --- Disable button while sending --- */
+      const btn     = document.getElementById('cf-btn');
+      const btnText = document.getElementById('cf-btn-text');
+      btn.disabled = true;
+      btnText.textContent = 'Sending…';
+
+      /* --- Build FormData for Google Forms --- */
+      const fd = new FormData();
+      fd.append('entry.2005620554', nameVal);
+      fd.append('entry.1045781291', emailVal);
+      fd.append('entry.839337160',  msgVal);
+
+      /* --- Submit silently via no-cors fetch --- */
+      try {
+        await fetch(FORM_ACTION, { method: 'POST', body: fd, mode: 'no-cors' });
+      } catch (_) { /* no-cors always throws — that's fine, data still reaches Google */ }
+
+      /* --- Play chime --- */
+      playChime();
+
+      /* --- Clear fields --- */
+      document.getElementById('cf-name').value  = '';
+      document.getElementById('cf-email').value = '';
+      document.getElementById('cf-msg').value   = '';
+
+      /* --- Re-enable button --- */
+      btn.disabled = false;
+      btnText.textContent = 'Send Message';
+
+      /* --- Sweet success alert --- */
+      Swal.fire({
+        icon: 'success',
+        title: '✅ Message Sent!',
+        html: `
+          <p style="color:#94a3b8;margin-bottom:0.5rem;">Thanks for reaching out, <strong style="color:#e2e8f0">${nameVal}</strong>! 🙌</p>
+          <p style="color:#64748b;font-size:0.9rem;">Shehan will get back to you via <strong style="color:#10b981">${emailVal}</strong> shortly.</p>
+        `,
+        background: '#0d1229',
+        color: '#e2e8f0',
+        confirmButtonColor: '#6366f1',
+        confirmButtonText: '🚀 Awesome!',
+        showClass: { popup: 'animate__animated animate__fadeInDown' },
+        hideClass: { popup: 'animate__animated animate__fadeOutUp' },
+        timer: 7000,
+        timerProgressBar: true
+      });
+    });
+  })();
+  </script>
+
 </body>
 </html>
