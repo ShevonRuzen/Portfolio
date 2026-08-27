@@ -621,8 +621,8 @@ section {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 4.5rem;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 2.5rem;
   align-items: center;
   position: relative;
   z-index: 1;
@@ -781,9 +781,16 @@ section {
 
 .hero-actions {
   display: flex;
-  gap: 1.1rem;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: nowrap;
   margin-bottom: 2.6rem;
+}
+
+.hero-actions .btn {
+  padding: 0.9rem 1.4rem;
+  font-size: 0.92rem;
+  white-space: nowrap;
 }
 
 .btn {
@@ -1777,8 +1784,8 @@ footer span { color: var(--accent-light); font-weight: 600; }
 }
 
 @media (max-width: 1200px) {
-  .container { max-width: 1040px; }
-  .hero-grid { gap: 3rem; }
+  .container { max-width: 1080px; }
+  .hero-grid { gap: 2rem; }
 }
 
 @media (max-width: 1024px) {
@@ -1848,11 +1855,45 @@ footer span { color: var(--accent-light); font-weight: 600; }
   .road-card { flex: 0 0 280px; }
 }
 
-@media (max-width: 480px) {
+/* ==========================================================================
+   HERO ACTIONS RESPONSIVE 3-TIER LAYOUT
+   - Big screen (>1100px): Single row (3 buttons)
+   - Half / Medium screen (577px - 1100px): Row 1 (Projects), Row 2 (CV + Cover Letter)
+   - Mobile / Small screen (<=576px): 3 Rows (Column stack)
+   ========================================================================== */
+@media (max-width: 1100px) and (min-width: 577px) {
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+    width: 100%;
+    max-width: 580px;
+  }
+  .hero-actions .btn:first-child {
+    grid-column: 1 / -1;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 576px) {
   .hero-title { font-size: 2.2rem; }
   .section-heading { font-size: 2rem; }
-  .hero-actions { flex-direction: column; width: 100%; }
-  .btn { width: 100%; justify-content: center; }
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 440px;
+    gap: 0.85rem;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
   .pfp-wrap { width: 210px; }
   .pfp-img { width: 200px; height: 240px; }
   #topbar { padding: 0 0.8rem; font-size: 0.75rem; }
